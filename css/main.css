@@ -1,0 +1,125 @@
+
+/*#########################
+## USE ctr+f and type || ##
+## To navigate through   ##
+## the sections quickly  ##
+#########################*/
+
+
+/*  || Reset Rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || General Rules */
+body{
+    background: hsl(257, 40%, 49%) url(../images/bg-mobile.svg) no-repeat top center;
+    background-size: contain;
+    font-family: "Open Sans";
+    padding: 9%;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins";
+}
+
+
+/* || Main Header */
+.main-header img{
+    width: 8.6rem;
+}
+
+/*  || Illustration */
+.mockup-section{
+    margin-top: 16%; 
+}
+
+.mockup-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* || Description Section */
+.description-section{
+    color: #ffffff;
+    margin-top: 16%;
+    text-align: center;
+}
+
+.description-section__main-heading{
+    font-size: calc(1.15rem + 2vw);
+}
+.description-section__text{
+    line-height: 1.7;
+    padding-top: 1.2rem;
+    padding-bottom: 1.4rem;
+    font-size: calc(0.7rem + 1.3vw)
+}
+
+.description-section__cta{
+    background: #ffffff;
+    border: none;
+    border-radius: 3rem;
+    color: hsl(257, 40%, 49%);
+    font-size: 0.9rem;
+    max-width: 14rem;
+    padding: 0.7rem;
+    width: 70%;
+    
+}
+
+/* || FOOTER */
+
+.socialmedia-icons{
+    text-align: center;
+    margin-top: 18%;
+}
+
+.socialmedia-icons__list{
+    list-style: none;
+}
+
+.socialmedia-icons__icon{
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    height: 1.7rem;
+    text-align: center;
+    width: 1.7rem;
+}
+
+.socialmedia-icons__icon i{
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+.socialmedia-icons__icon:nth-child(2){
+    margin: 0 8px;
+}
+
+/* || Media Queries */
+
+@media (min-width: 37.5rem){
+    .description-section__text{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+@media (min-width: 43.75rem){
+    .main-header img{
+        width: 9.6rem;
+    }
+    .description-section__main-heading,
+    .description-section__text{
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .description-section__text{
+        width: 75%;
+    }
+}

@@ -1,0 +1,90 @@
+/*#########################
+## USE ctr+f and type || ##
+## To navigate through   ##
+## the sections quickly  ##
+#########################*/
+
+/* || General rules */
+html{
+    height: 100%;
+}
+
+body{
+    background: hsl(257, 40%, 49%) url(../images/bg-desktop.svg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 3rem 4rem;
+    overflow: hidden;
+}
+
+main{
+    height: 100%;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto 38%;
+    grid-gap: 2%;
+    align-content: center;
+    height: 100%;
+}
+
+/* || Main Header */
+.main-header img{
+    width: 10.6rem;
+}
+
+/* || Mockup Section */
+.mockup-section{
+    margin-top: 0; 
+}
+
+/* || Description Section */
+.description-section{
+    margin-top: 10%;
+    text-align: left;
+}
+
+.description-section__main-heading{
+    font-size: calc(1.4rem + 1vw) ;
+    margin: 0;
+    width: 100%;
+}
+
+.description-section__text{
+    font-size: calc(0.2rem + 1vw);
+    margin: 0;
+    width: 100%;
+}
+
+.description-section__cta{
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 50%;
+}
+
+/* || Footer  */
+footer{
+    position: relative;
+    bottom: 40%;
+}
+
+.socialmedia-icons{
+    text-align: right;
+}
+
+.socialmedia-icons__icon{
+    cursor: pointer;
+}
+
+@media(min-width: 90rem){
+    .description-section__main-heading{
+        font-size: 2.51rem;
+    }
+
+    .description-section__text{
+        font-size: 1.25rem;
+    }
+}
